@@ -21,6 +21,35 @@
         //5.Modulus
         result=result % 3;//here previous result -> 10/3 & remider 1.That reminder 1 will display in console
         console.log(result);
+        //unary operators(work on one operator)
+        //eg: +1 , -1 , ++(increment by 1) , --(decrement by 1)
+        //unary operators can be written in prefix &suffix also.see the difference when use with other operators
+        result=result+1;
+        console.log(result);
+        result++;
+        console.log(result);
+        result--;
+        console.log(result);
+        ++result;
+        console.log(result);
+        --result;
+        console.log(result);
+        //see difference
+        var otherVar=++result+5;//prefix->1st done increment ++ and do with another operator +5 =8
+        console.log(otherVar);
+        var anotherVar=result++ +2;
+        console.log(anotherVar);//suffix->1st add result another operator result+2=4 , here value of result is 4 & do increment ++=5
+        console.log(result);
+        // +-> act as concatenation
+        var lang="Javascript";
+        console.log("Hello, "+lang+"!");
+        //below add string with number now +-> operator act as concatenation
+        console.log(lang+3)
+        //NaN->when we expect expression result as number but input will other than number (like string).JS display as NaN(Not a Number)
+        //like infinity Nan also value of number datatype
+        //eg:we calculate adge of user but user type age as string (like "twenty five")
+        console.log(2022-"twenty five");
+
     </script>
 </head>
 <body>
