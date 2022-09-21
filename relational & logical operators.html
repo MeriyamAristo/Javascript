@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational & Logical Operators</title>
+    <script>
+        //1.Relational Operators
+        console.log('10>5=',10>5);
+        console.log('15<8',15<8);
+        console.log('16>=15=',16>=15);
+        console.log('21<=18=',21<=18);
+        console.log('15==15=',15==15);
+        console.log('15!=15=',15!=15);
+        //now compare 15 number with string
+        console.log('15=="15"=',15=="15");//here 15-(string value) with
+        // relational operator->string automatically consider as number.it call as type coercion
+        console.log('15!="15"',15!="15");
+        //above type conversion doned & then do checking,without do type conversion do below
+        console.log('15==="15"',15==="15");
+        console.log('15!=="15"',15!=="15");
+        //2.logical operators
+        //NOT->apply for which value gives result opposite to that value
+        console.log('!true=',!true);//false
+        console.log('!10=',!10);
+        //OR->apply on 2 operant,in this 2 operant one is true result is true;
+        //display false when the 2 operant is false
+        console.log('10 || "ok" =',10 || "0k");
+        console.log('"yes" || null =',"yes"||null);
+        console.log('""||25=', ""||25);
+        console.log('undefined || false =',undefined || false);
+       //another metod of using OR operator used to stored default value
+        var someUserInput;
+        //pseudo code to get user input
+        //here if pseudo code collect user's input means it has truthy value.That be stored in num
+        //or else absence of user's input it will consider non intialise undefined falsy value of sumUserInputvar 
+        num=someUserInput||0;//value os someUserInput is undefined->undefined||0 both are falsy values
+        console.log(num);//then show updefault value ->0
+        //And operator
+        //check 2 operators and then show result.If 1st one true check also 2nd operant
+        console.log('10 && "ok"=',10 && "ok");//2 operant true then result true
+        console.log('"yes" && null=',"yes"&&null);//2 operant true then result true
+        console.log('"" && 25=',"" && 25);//1st operant false then result false
+console.log('undefined && false =', undefined&&false);//1st operant false then result false
+    </script>
+</head>
+<body>
+    <h1>Relational &amp; Logical Operators</h1>
+    <ul>
+     <li>&gt;, &lt;, &gt;=, &lt;=, ==, !=, ===, !==</li>
+     <li>! (NOT), || (or), && (and)</li>
+   </ul>
+</body>
+</html>
