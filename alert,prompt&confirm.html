@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,prompt &amp; Confirm</title>
+    <script>
+        /* alert:show pop up msg
+               ('hello, js!')
+          // prompt:has 2 values.
+                    1->askquestions or deliver msg to user
+                    2->otional & default value
+              var name=prompt('what is your name?','Anonymous');
+              alert('hello, '+ name +"!")
+          // confirm:show warning msg to user
+              var response=confirm('i am intresting to learn js');
+             alert(response);*/
+              //find whether the person allowed to take a roller coaster ride
+       var age=prompt('what is your age?',18);
+       if(age<18){
+        //if age <18 , ask for parent permission
+                  var parentPermission=confirm("do you have parents permission");
+                  //here user click ok , permitted for ride
+                   if(parentPermission){
+                     alert('you are permitted for the ride');
+                                       }
+                     // user click cancel button not permitted for ride                  
+                     else{
+                       alert('you are NOT permitted for the ride');
+                         } 
+                  }
+    //age >18 allowed for ride              
+        else{
+            alert('you are allowed for the ride');
+        }
+    
+        
+             
+    </script>
+</head>
+<body>
+    <h1>Alert,prompt &amp; confirm functions</h1>
+</body>
+</html>

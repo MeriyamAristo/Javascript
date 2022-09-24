@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If&amp;If-else Statement</title>
+    <script>
+        var personOneAge=45;
+        var personTwoAge=54;
+        //basic if statement
+        //to calculate who is the older one
+       /* if(personOneAge>personTwoAge){ //statement iside the curly brase called block statement & it is in if statement so {}->call if block statement
+            console.log('person1 is older than person2')
+        }
+        if(personTwoAge>personOneAge){
+            console.log('person2 is older than person1')
+        }*/
+        //rewrite with if-else to avoid unnecessary if statement
+       /* if(personOneAge>personTwoAge){ 
+            console.log('person1 is older than person2')
+        }
+        else(personTwoAge>personOneAge){
+            console.log('person2 is older than person1')
+        }*/
+        //add 3rd person and compare
+        var personThirdAge=75;
+
+       /* if(personOneAge>personTwoAge && personOneAge>personThirdAge){ 
+            console.log('person1 is older one');
+        }
+        if(personTwoAge>personOneAge && personTwoAge>personThirdAge){ 
+            console.log('person2 is older one');
+        }
+        if(personThirdAge>personOneAge && personThirdAge>personTwoAge){ 
+            console.log('person3 is older one');
+        }*/
+
+        //rewrite with if-else-if to unnecessary if statement
+        if(personOneAge>personTwoAge && personOneAge>personThirdAge){ 
+            console.log('person1 is older one');
+        }
+        else if(personTwoAge>personThirdAge){
+            console.log('person2 is older one')
+        }
+        else{
+            console.log('person3 is older one')
+        }
+
+        //find whether the person allowed to take a roller coaster ride
+          var age=16;
+          var parentPermission=true;
+          if(age>=18||parentPermission){
+            console.log('yor are allowed for the ride')
+          }else{
+            console.log("you are not allowed")
+          }
+          //condition age above 60 is not permitted
+          var age=54;//change age value above 60 & see 
+          if((age<=16 && parentPermission===false) || age >= 60){
+            console.log('you are not allowed')
+          }
+          else{
+            console.log('you are allowed')
+          }
+
+    </script>
+</head>
+<body>
+    <h1>If&amp;If-else Statement</h1>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional &amp; Assignment Operators</title>
+    <script>
+        /*1.conditional Operators
+             syntax--> variableName=booleanExpression?trueValue:falseValue;
+              here boolean expression came true after the ?mark can stored in variable
+                   boolean expression came false after the : can stored in variable*/
+        var age=18,isMinor;//change value of age less than 18.console print "yes"
+        isMinor=age>=18?'no':'yes';//here boleanExpression is true.So after the ?mark had no
+        console.log('isMinor',isMinor);//print ->no
+        /* 2.Assignment Operators:
+              ussage of this operator: var age=5;here leftside literal value->5 can stored in right side age variable
+              in this usage had Compound Assignment Variables:
+              eg, */
+              var balance=500, credit=200;
+             //balance=balance+credit;
+                  //the compound assignment operator are
+                  //1.+=
+                balance+=credit;//both balance statement usage are same
+                console.log('balance:',balance);
+                //2.-=
+                var num=5;
+                num-=3;
+                console.log(num);
+                //3.*=
+                num*=5;
+                console.log(num);
+                //4.%=
+                num%=3;//%->modulus
+                console.log(num);//print remainder 1
+                //5./=
+                num/=2;
+                console.log(num);
+
+    </script>
+</head>
+<body>
+    <h1>Conditional &amp; Assignment Operators</h1>
+</body>
+</html>
