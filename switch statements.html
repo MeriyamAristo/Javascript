@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch statements</title>
+    <script>
+        //one set of pre defined choices excecute one block statement by chaining if else
+    //     var day=5;
+    //     if(day==1){
+    //         console.log('what Monday? Week end already over...Oh no!');
+    //     }
+    //     else if(day==2){
+    //         console.log('Tuesday, slowly to start work');
+    //     }
+    //    else if(day==3){
+    //         console.log('Wednesday, to do more');
+    //     }
+    //    else if(day==4){
+    //         console.log('Thursday , half the week gone already');
+    //     }
+    //    else if(day==5){
+    //         console.log('Friday ,finally it is friday!');
+    //     }
+    //    else if(day==6){
+    //         console.log('Startling Saturday');
+    //     }
+    //    else if(day==7){
+    //         console.log('Surprising Sunday');
+    //     }
+        //one set of pre defined choices excecute one block statement by chaining if else.To alter that(if else) by switch staement
+        //inside switch()->give expression wish to check
+         day=5;
+         //switch:
+         //---> work with all datatypes in js.
+        
+        switch(day){
+            //near case(as keyword) 1 is the value.This will compare with expression(day=1)->this came true excecute nxt statement
+            case 1:
+            console.log('what Monday? Week end already over...Oh no!');
+            //in absence of break keyword beyond statement will excecute.Not to check further cases
+            case 2:
+            console.log('Tuesday, slowly to start work');
+            break;
+            case 3:
+            console.log('Wednesday, to do more');
+            break;
+            case 4:
+            console.log('Thursday , half the week gone already');
+            break;
+            case 5:
+            console.log('Friday ,finally it is friday!');
+            break;
+            case 6:
+            console.log('Startling Saturday');
+         break;
+            case 7:
+            console.log('Surprising Sunday');
+            break;
+            
+            //without using break keyword..beyond statement will excecute
+            /* case 5:
+            console.log('Startling Saturday');
+            case 6:
+            console.log('Startling Saturday');
+            case 7:day
+            console.log('Surprising Sunday');
+            break
+            //written in another way: here day 6/7 print week end msg
+                case 6:
+                case 7:
+                    console.log('week end');
+                    break; */
+            default: //excecute when expression in switch & value are mismatching
+                console.log('There is no such day in week')
+        }
+         //-->case value be in literal or a variable or a expression
+         switch("Hello Javascript"){
+            case "Hello" + " Javascript": // case value & switch expression both are same.So print my man
+            console.log("My man!");
+            break;
+            default:
+                console.log("Go away JS Hater!")
+         }
+         //above week days can also be written in this way
+         day=3;
+         switch(true){//below have 2 case..From this which expression came true that's console statement will print
+            case day>0 && day<6:
+                console.log('working days :(')
+                break;
+            case day==6 || day==7:
+                console.log('Holiday :)')
+                break;
+            default:console.log("which day are you talking about!");
+
+           // -->expressions are rare use in switch
+         }
+    </script>
+</head>
+<body>
+    <h1>Switch statements</h1>
+   
+</body>
+</html>

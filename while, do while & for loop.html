@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While, Do while & For loops</title>
+    <script>
+       /* //do while loop
+        do{
+            console.log('Playing game...');//1st display in console
+            var continuePlaying=confirm('continue playing');//user click ok do while statement will repeat
+        } while (continuePlaying);//user click cancel out from loop & display end msg
+
+        console.log('The End');
+       
+       //while loop : repeated while the condition is true
+       var count=10;
+       while(count>0){
+        console.log('count: ', count--);
+       }
+       console.log('while loop ended');
+        
+       //for loop
+       //syntax:
+      // for(initializeCounter; condition; incrementCounter){
+        //block of statements
+      // }
+      for(var daysInWeek=1; daysInWeek<=7; daysInWeek++){
+        console.log('Day: ',daysInWeek);
+      }*/
+      //break and continue
+      //below eg to count how many days in month
+      var month=prompt('Enter a number btw 1 to 12', 6);
+      for(var days=1; days<=31; days++){
+        //here month is not equal to 4,6,9,11.so it print 31 days for remaining month(1,3,5,7,8,10,12)
+        //incase month equal to 4,6,9,11 print 30 days
+      if((month==4||month==6||month==9||month==11)&& days==31) continue;
+      console.log('day: ',days);
+      if(month==2 && days==28) break; //here month is 2->print 28 days.no need to print remaining 3days. so
+      // use break keyword and leave from loop
+      }
+    </script>
+</head>
+<body>
+    <h1>While, Do while &amp; For loops</h1>
+</body>
+</html>
