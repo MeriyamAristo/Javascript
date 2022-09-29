@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Basics</title>
+    <script>
+        //syntax:
+        //function as keyword; functionName as identifier;(param1,param2) as holder of function's data(name of variables)
+        function functionName(param1,param2){
+            //statements for the task
+        }
+        //call function/ invoking function by its name
+        functionName();//in function declaration having parameters(as definition) here passing its arguments(calling values)
+       
+
+       // call function without parameters 
+        function greet1(){
+            console.log("welcome");
+        }
+        greet1();
+
+        //function with 2 parameters &1 return staement
+        function greet2(message, name){
+           return "hello, " + name + "! " + message; 
+                }//return keyword return one variable(here string is variable) from fuction
+        var greetMessage=greet2("How are you?" , "Meri");//call return statement these string variables do concordinate & return as string
+        console.log(greetMessage); 
+
+        //function with 2 parameters &12return staement
+        //function having number of return statement
+function greet3(message,name){
+    if(name){
+            return "hello, " + name + "! " + message;
+        }else{
+            return "hello ,Anonymous! " + message;
+        }
+}
+    var greetMessage=greet3('How are you?');//here not declaring 2nd argument(so it is undefined value) but we initialise the value in function declaration
+    console.log(greetMessage);
+
+      //above-> if statement in if block staement will executed, statements below this(if)statement will not executed
+      function greet4(message,name){
+    if(name){
+            return "hello, " + name + "! " + message;
+        } console.log("I won't visible to you","if you give the name");
+            return "hello ,Anonymous! " + message;
+        }
+        var greetMessage=greet4('How are you?', "Meri");//here not declaring 2nd argument(so it is undefined value) but we initialise the value in function declaration
+    console.log(greetMessage);
+
+    </script>
+</head>
+<body>
+    <h1>Function Basics</h1>
+</body>
+</html>
