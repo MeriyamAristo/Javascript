@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference types</title>
+    <script>
+        /* object definition--->object value ...both are different
+            --above object definition as reference type:is the way of grouping data & operation upon data 
+            -- object(value): instance of reference type
+            --constructor:creating instance of reference       */
+
+// below, obj value=constructor function (use constructor of obj reference type to create value of obj)
+          var person=new Object();
+          console.log(person instanceof Object);//instance of: is an operetor ,find the obj type
+    // add data
+    person.name="meri";//here string value is stored in .name property
+    person.profession="frontend developer";
+    console.log(person.name);
+    console.log(person.profession);
+
+    //properties and method are grouped in obj
+    person.sayHi=function(){
+        console.log("hi " + person.name)
+    }
+    person.sayHi();//it is function but in js it call method.It act upon data
+
+
+    //difference btw primitive & obj value
+    var num1=10;
+    var num2=num1;
+    var obj1=new Object();
+    var obj2=obj1;
+
+    num2=20;
+    console.log("num1: ", num1);//here num1 & num2 print different values
+    console.log("num2: ", num2);
+
+    obj2.newProp="By reference";
+    console.log("obj1: ",obj1);//here obj 1& obj 2 print the same bcz it refer same obj in memory heap
+    console.log("obj2: ",obj2);
+
+
+
+   </script>
+</head>
+<body>
+   <h1>Reference types</h1> 
+</body>
+</html>
