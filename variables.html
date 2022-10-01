@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <script>
+        //using var keyword
+        var x=2;
+        var y=4;
+        var z=x+y;
+        console.log(z);
+        //using let keyword
+        let a=6;
+        let b=4;
+        let c=a+b;
+        console.log(c);
+        //using undeclared variable
+         h=8;
+         i=6;
+         j=h-i;
+         console.log(j);
+         /*using const(constant->cannot be change):
+                 -- always declare variables with const
+                 --the value of the variable can change, use let
+                
+         */
+        const price1 = 7;
+        const price2 = 3;
+        let total = price1 + price2;
+        console.log(total);
+
+        /* one statement(keyword) many variables, seperating by comma(,)*/
+        let person="Meri",
+        height=165,
+        weight=63;
+        console.log(height);
+   </script>
+</head>
+<body>
+    <h1>What are variables?</h1>
+    <p>--variables are containers for storing data</p>
+    <h2>4 ways to declare js variables by keywords</h2>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+        <li>using nothing(undeclared variable)
+        </li>
+    </ul>
+</body>
+</html>

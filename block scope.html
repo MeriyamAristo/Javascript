@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block scope</title>
+    <script>
+//Variables declare with let keyword inside a{} cannot accessed from outside the block
+   let x=1;
+   {
+    let x=7;
+   }
+   console.log(x);
+    //variables declared with var keyword inside a{} can accessed from outside the block
+       var y=3;
+       {
+        var y=2;
+       }
+       console.log(y);
+    </script>
+</head>
+<body>
+    <h1>Block scope</h1>
+    <p>Variables declare inside a{} cannot accessed from outside the block</p>
+</body>
+</html>
